@@ -10,6 +10,10 @@ import {
 import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi'
 import { GrMysql } from 'react-icons/gr'
 
+import books from './assets/projects/books.png'
+import backroads from './assets/projects/backroads.png'
+import reactBasic from './assets/projects/react-basic.png'
+
 export const headers = [
   { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -77,26 +81,26 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'first project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    img: books,
+    url: 'https://web-books-store.netlify.app/',
+    github: 'https://github.com/jayrboy/01-fundamentals-react',
+    title: 'books project',
+    text: 'ระบบโชว์หนังสือจากร้านค้า',
   },
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'second project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    img: backroads,
+    url: 'https://backroads-web-app-01.netlify.app',
+    github: 'https://github.com/jayrboy/backroads-app-react',
+    title: 'เปลี่ยน HTML Project ให้เป็น React Project',
+    text: 'โปรเจกต์ HTML Template แบบเดิมที่มีอยู่ นำมาเปลี่ยนการแสดงผลให้อยู่รูปแบบ JSX',
   },
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
+    img: reactBasic,
+    url: 'https://react-state-basic-101.netlify.app/',
+    github: 'https://github.com/jayrboy/react-basic',
     title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    text: 'แอปพลิเคชันเก็บข้อมูลนักเรียน เก็บข้อมูลโดย Array State โดยส่ง Properties ไปแสดง Component ย่อย และสร้างปุ่ม ซ่อน/แสดง จำนวนนักเรียน',
   },
 ]
