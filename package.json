@@ -1,5 +1,7 @@
 {
   "name": "portfolio-app",
+  "description": "WebDev Portfolio with Tailwind CSS",
+  "author": "Jay Jakkrit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
