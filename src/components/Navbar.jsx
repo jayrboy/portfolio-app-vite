@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import { headers } from '../data'
 
+import './Navbar.css'
+
 const Navbar = () => {
   return (
     <nav className="bg-orange-100">
@@ -9,7 +11,7 @@ const Navbar = () => {
           Web
           <span className="text-orange-600">Portfolio</span>
         </h2>
-        <div className="flex gap-x-3 ">
+        <div className="flex gap-x-3 ms-auto">
           {headers.map((header) => {
             const { id, href, text } = header
             return (
