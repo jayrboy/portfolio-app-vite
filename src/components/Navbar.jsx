@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { headers } from '../data'
 
 const Navbar = () => {
@@ -21,6 +22,12 @@ const Navbar = () => {
               </a>
             )
           })}
+          <NavLink
+            to="/resume"
+            className="capitalize text-lg tracking-wide hover:text-orange-600 duration-300"
+          >
+            Resume
+          </NavLink>
         </div>
       </div>
     </nav>
