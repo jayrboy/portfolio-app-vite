@@ -15,10 +15,10 @@ import backroads from './assets/projects/backroads.png'
 import reactBasic from './assets/projects/react-basic.png'
 
 export const headers = [
-  { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
   { id: nanoid(), href: '#about', text: 'about' },
   { id: nanoid(), href: '#projects', text: 'projects' },
+  { id: nanoid(), href: '#resume', text: 'resume' },
 ]
 
 export const skills = [
