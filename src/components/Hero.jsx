@@ -18,6 +18,7 @@ const Hero = () => {
           <p className="mt-2 text-lg text-slate-700 capitalize tracking-wide">
             เปลี่ยนไอเดียให้กลายเป็นเว็บแอปพลิเคชัน
           </p>
+
           <div className="flex gap-x-4 mt-4">
             <a href="https://github.com/jayrboy" target="_new">
               <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
