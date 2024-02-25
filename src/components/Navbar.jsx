@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { headers } from '../data'
 
-import './Navbar.css'
-
 const Navbar = () => {
   return (
     <nav className="bg-orange-100">

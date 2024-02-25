@@ -6,7 +6,12 @@ const Hero = () => {
     <section className="bg-orange-100 py-24  ">
       <div className=" mx-auto max-w-7xl  px-8  grid  md:grid-cols-2 items-center gap-8">
         <article>
-          <h1 className="text-7xl font-bold tracking-wider">I am Jakkrit</h1>
+          <h1 className="text-7xl font-bold tracking-wider bouncing-text-x">
+            👋
+          </h1>
+          <h2 className="text-7xl font-bold tracking-wider bouncing-text-y">
+            I am Jakkrit
+          </h2>
           <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
             web developer
           </p>

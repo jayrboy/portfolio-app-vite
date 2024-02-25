@@ -332,3 +332,9 @@ export default ProjectsCard
 #### Extra Challenge
 
 - setup projects in CMS
+
+#### Text Animation
+
+```sh
+npm install gsap split-text-js
+```
