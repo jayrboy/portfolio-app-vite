@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import resumeJPG from '../assets/resume.jpg'
-import transcript from '../assets/transcript.jpg'
+import transcriptJPG from '../assets/transcript.jpg'
 import { Link } from 'react-router-dom'
 import { FaFileDownload } from 'react-icons/fa'
 import resumePDF from '../assets/Resume.pdf'
@@ -18,15 +17,16 @@ const Resume = () => {
   return (
     <>
       <nav className="bg-orange-100">
-        <div className="align-element py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
+        <div className="align-element py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-5">
           <h2 className="text-3xl font-bold">
             Web
             <span className="text-orange-600">Portfolio</span>
           </h2>
         </div>
       </nav>
-      <section className="bg-white py-20" id="resume">
-        <div className="align-element grid  md:grid-cols-2 items-center gap-16">
+      {/* Resume */}
+      <section className="bg-white py-20">
+        <div className="align-element items-center">
           <article>
             <div className="border-b border-gray-200 pb-5">
               <h2 className="text-3xl font-medium tracking-wider capitalize">
@@ -43,17 +43,21 @@ const Resume = () => {
           </article>
         </div>
         {/* Card Resume */}
-
-        <article className="bg-white rounded-lg shadow-md block hover:shadow-xl duration-300">
-          <img
-            src={resumeJPG}
-            alt="resume"
-            className="w-full object-cover rounded-t-lg"
-          />
-        </article>
+        <div className="flex justify-center items-center pt-2">
+          <article
+            className="bg-white rounded-lg shadow-md block hover:shadow-xl duration-300"
+            style={{ width: '400px' }}
+          >
+            <img
+              src={resumeJPG}
+              alt="resume"
+              className="w-full object-cover rounded-t-lg"
+            />
+          </article>
+        </div>
         <br />
         <br />
-        <div className="align-element grid  md:grid-cols-2 items-center gap-16">
+        <div className="align-element">
           <article>
             <div className="border-b border-gray-200 pb-5">
               <h2 className="text-3xl font-medium tracking-wider capitalize">
@@ -70,18 +74,25 @@ const Resume = () => {
           </article>
         </div>
         {/* Card Transcript */}
-        <article className="bg-white rounded-lg shadow-md block hover:shadow-xl duration-300">
-          <img
-            src={transcript}
-            alt="resume"
-            className="w-full object-cover rounded-t-lg"
-          />
-        </article>
+        <div className="flex justify-center items-center pt-2">
+          <article
+            className="bg-white rounded-lg shadow-md block hover:shadow-xl duration-300"
+            style={{ width: '400px' }}
+          >
+            <img
+              src={transcriptJPG}
+              alt="resume"
+              className="w-full object-cover rounded-t-lg"
+            />
+          </article>
+        </div>
         <br />
+        <br />
+
         <div className="text-center">
-          <a className="bg-orange-500 hover:bg-orange-600 text-white py-1 px-3 rounded">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white py-1 px-3 rounded">
             <Link to="/">กลับหน้าหลัก</Link>
-          </a>
+          </button>
         </div>
       </section>
     </>
