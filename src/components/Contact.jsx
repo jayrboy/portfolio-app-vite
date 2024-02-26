@@ -10,12 +10,11 @@ const Contact = () => {
 
     emailjs
       .sendForm('service_7nx0av8', 'template_txy155n', form.current, {
-        publicKey: import.meta.env.PUBLIC_API_KEY,
+        publicKey: 'nlomm5fnIaFKAS8g_',
       })
       .then(
         () => {
           alert('Successfully')
-          window.location.reload(false)
         },
         (error) => {
           alert('Failed to send the message, please try again', error.text)
