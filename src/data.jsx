@@ -13,6 +13,12 @@ import { GrMysql } from 'react-icons/gr'
 import books from './assets/projects/books.png'
 import backroads from './assets/projects/backroads.png'
 import reactBasic from './assets/projects/react-basic.png'
+import taskManage from './assets/projects/task-manage.png'
+import blogApp from './assets/projects/blog-app.png'
+import shopContext from './assets/projects/shopping-context.png'
+import quizApp from './assets/projects/quiz-app.png'
+import reactVite from './assets/projects/react-vite.png'
+import shopRedux from './assets/projects/shopping-redux.png'
 
 export const headers = [
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -92,15 +98,63 @@ export const projects = [
     img: backroads,
     url: 'https://backroads-web-app-01.netlify.app',
     github: 'https://github.com/jayrboy/backroads-app-react',
-    title: 'เปลี่ยน HTML Project ให้เป็น React Project',
-    text: 'โปรเจกต์ HTML Template แบบเดิมที่มีอยู่ นำมาเปลี่ยนการแสดงผลให้อยู่รูปแบบ JSX',
+    title: 'HTML template เปลี่ยนเป็น react project',
+    text: 'HTML Template แบบเดิมที่มีอยู่ นำมาเปลี่ยนการแสดงผลให้อยู่รูปแบบ JSX',
   },
   {
     id: nanoid(),
     img: reactBasic,
     url: 'https://react-state-basic-101.netlify.app/',
     github: 'https://github.com/jayrboy/react-basic',
-    title: 'third project',
+    title: '101 react project',
     text: 'แอปพลิเคชันเก็บข้อมูลนักเรียน เก็บข้อมูลโดย Array State โดยส่ง Properties ไปแสดง Component ย่อย และสร้างปุ่ม ซ่อน/แสดง จำนวนนักเรียน',
+  },
+  {
+    id: nanoid(),
+    img: taskManage,
+    url: 'https://react-task-management-web.netlify.app/',
+    github: 'https://github.com/jayrboy/task-app-react.git',
+    title: 'task management',
+    text: 'แอปพลิเคชันจัดการงาน เก็บข้อมูลใน Local Storage เพิ่ม ลบ แก้ไข และปุ่มปรับโหมดกลางวัน/กลางคืน',
+  },
+  {
+    id: nanoid(),
+    img: blogApp,
+    url: 'https://react-blog-webapp.netlify.app/',
+    github: 'https://github.com/jayrboy/blog-app-react.git',
+    title: 'blog application',
+    text: 'แอปพลิเคชันสำหรับดูบทความ โครงสร้างเว็บทั่วไป เปลี่ยนเส้นทางหน้าเว็บเพจ หน้าแรก, บทความทั้งหมด, เกี่ยวกับเรา โดยใช้ React Router DOM V6 และช่องรับข้อมูล Search สำหรับค้นหาบทความ',
+  },
+  {
+    id: nanoid(),
+    img: shopContext,
+    url: 'https://shopping-context-reducer.netlify.app/',
+    github: 'https://github.com/jayrboy/shopping-app-react.git',
+    title: 'shopping application',
+    text: 'ระบบตะกร้าสินค้า โดยใช้ Context และ Reducer ปริมาณสินค้า จำนวน ราคา ยอดรวม เพิ่ม/ลดจำนวน และลบรายการสินค้า',
+  },
+  {
+    id: nanoid(),
+    img: quizApp,
+    url: 'https://quiz-app-react-ect.netlify.app/',
+    github: 'https://github.com/jayrboy/quiz-app-react.git',
+    title: 'quiz application',
+    text: 'ระบบทำข้อสอบ โดยใช้ Context',
+  },
+  {
+    id: nanoid(),
+    img: reactVite,
+    url: 'https://react-vite-app-tutorial.netlify.app/',
+    github: 'https://github.com/jayrboy/app-react-vite.git',
+    title: '101 react+vite project',
+    text: 'React Vite Application',
+  },
+  {
+    id: nanoid(),
+    img: shopRedux,
+    url: 'https://shopping-vite-redux.netlify.app/',
+    github: 'https://github.com/jayrboy/shopping-vite-redux.git',
+    title: 'shopping application',
+    text: 'ระบบตะกร้าสินค้า โดยใช้ Redux Toolkit ปริมาณสินค้า จำนวน ราคา ยอดรวม เพิ่ม/ลดจำนวน และลบรายการสินค้า',
   },
 ]
