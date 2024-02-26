@@ -1,7 +1,16 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import 'leaflet/dist/images/marker-icon.png'
-import 'leaflet/dist/images/marker-shadow.png'
+import L from 'leaflet'
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
+
+delete L.Icon.Default.prototype._getIconUrl
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+})
 
 const MapStatic = () => {
   const position = [13.8207, 100.5164]
