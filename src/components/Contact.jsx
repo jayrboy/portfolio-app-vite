@@ -12,14 +12,11 @@ const Contact = () => {
       .sendForm('service_7nx0av8', 'template_txy155n', form.current, {
         publicKey: 'nlomm5fnIaFKAS8g_',
       })
-      .then(
-        () => {
-          alert('Successfully')
-        },
-        (error) => {
-          alert('Failed to send the message, please try again', error.text)
-        }
-      )
+      .then(() => {
+        form.current.reset()
+        alert('ส่งอีเมลสำเร็จ ขอบคุณครับ')
+      })
+      .catch((error) => alert('เกิดข้อผิดพลาด: ', error.message))
   }
 
   return (
