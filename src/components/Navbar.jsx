@@ -7,7 +7,9 @@ const Navbar = () => {
       <div className="align-element py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
         <h2 className="text-3xl font-bold">
           Web
-          <span className="text-orange-600">Portfolio</span>
+          <a href="#" className="text-orange-600">
+            Portfolio
+          </a>
         </h2>
         <div className="flex gap-x-3 ms-auto">
           {headers.map((header) => {
