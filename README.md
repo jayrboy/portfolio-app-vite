@@ -335,6 +335,108 @@ export default ProjectsCard
 
 #### Text Animation
 
+```css
+@keyframes bounceX {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.bouncing-text-x {
+  animation: bounceX 1s infinite;
+}
+
+@keyframes bounceY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bouncing-text-y {
+  animation: bounceY 1s infinite;
+}
+```
+
+### Map
+
 ```sh
-npm install gsap split-text-js
+npm install leaflet react-leaflet
+```
+
+```js
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+
+const MapStatic = () => {
+  const position = [13.8207, 100.5164]
+
+  return (
+    <MapContainer
+      center={position}
+      zoom={15}
+      scrollWheelZoom={false}
+      style={{ height: '450px' }}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={position}>
+        <Popup>
+          มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 🎓
+          <br /> 1518 ถนน ประชาราษฎร์1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800
+        </Popup>
+      </Marker>
+    </MapContainer>
+  )
+}
+export default MapStatic
+```
+
+### Contact US
+
+```sh
+npm i @emailjs/browser
+```
+
+```js
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+
+const MapStatic = () => {
+  const position = [13.8207, 100.5164]
+
+  return (
+    <MapContainer
+      center={position}
+      zoom={15}
+      scrollWheelZoom={false}
+      style={{ height: '450px' }}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={position}>
+        <Popup>
+          มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 🎓
+          <br /> 1518 ถนน ประชาราษฎร์1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพมหานคร 10800
+        </Popup>
+      </Marker>
+    </MapContainer>
+  )
+}
+export default MapStatic
 ```
