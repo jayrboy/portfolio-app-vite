@@ -5,12 +5,12 @@ import MapStatic from './MapStatic'
 const Contact = () => {
   const form = useRef()
 
-  const onSubmitForm = (e) => {
-    e.preventDefault()
+  const onSubmitForm = (ev) => {
+    ev.preventDefault()
 
     emailjs
       .sendForm('service_7nx0av8', 'template_txy155n', form.current, {
-        publicKey: 'nlomm5fnIaFKAS8g_',
+        publicKey: import.meta.env.PUBLIC_API_KEY,
       })
       .then(
         () => {
@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="bg-white py-20">
+      <section className="bg-white py-20" id="contact">
         <div className=" mx-auto max-w-7xl px-8 grid md:grid-cols-1">
           <article>
             <div className="border-b border-gray-200 pb-5">
@@ -42,7 +42,7 @@ const Contact = () => {
               <div className="mt-2 px-10">
                 <input
                   type="text"
-                  name="user_name"
+                  name="name"
                   placeholder=" Name"
                   className="block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 sm:leading-6 p-3"
                   required
@@ -52,8 +52,17 @@ const Contact = () => {
               <div className="mt-2 px-10">
                 <input
                   type="email"
-                  name="user_email"
+                  name="email"
                   placeholder=" Email"
+                  className="block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 sm:leading-6 p-3"
+                  required
+                />
+              </div>
+              <div className="mt-2 px-10">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder=" Subject"
                   className="block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 sm:leading-6 p-3"
                   required
                 />
