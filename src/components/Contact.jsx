@@ -10,7 +10,7 @@ const Contact = () => {
 
     emailjs
       .sendForm('service_7nx0av8', 'template_txy155n', form.current, {
-        publicKey: 'nlomm5fnIaFKAS8g_',
+        publicKey: import.meta.env.VITE_EMAILJS_KEY,
       })
       .then(() => {
         form.current.reset()
