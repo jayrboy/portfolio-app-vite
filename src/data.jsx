@@ -19,6 +19,8 @@ import shopContext from './assets/projects/shopping-context.png'
 import quizApp from './assets/projects/quiz-app.png'
 import reactVite from './assets/projects/react-vite.png'
 import shopRedux from './assets/projects/shopping-redux.png'
+import reactRedux101 from './assets/projects/react-redux-101.png'
+import react101 from './assets/projects/react-101.png'
 
 export const headers = [
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -90,7 +92,7 @@ export const projects = [
     img: books,
     url: 'https://web-books-store.netlify.app/',
     github: 'https://github.com/jayrboy/01-fundamentals-react',
-    title: 'books project',
+    title: '101 books project',
     text: 'ระบบโชว์หนังสือจากร้านค้า',
   },
   {
@@ -156,5 +158,21 @@ export const projects = [
     github: 'https://github.com/jayrboy/shopping-vite-redux.git',
     title: 'shopping application',
     text: 'ระบบตะกร้าสินค้า โดยใช้ Redux Toolkit ปริมาณสินค้า จำนวน ราคา ยอดรวม เพิ่ม/ลดจำนวน และลบรายการสินค้า',
+  },
+  {
+    id: nanoid(),
+    img: reactRedux101,
+    url: 'https://react-dev-101.netlify.app',
+    github: 'https://github.com/jayrboy/react-development-book1.git',
+    title: '101 react redux context',
+    text: 'พื้นฐานการใช้งาน React และตัวอย่างการสร้างแอปพลิเคชันด้วย react + redux API + context',
+  },
+  {
+    id: nanoid(),
+    img: react101,
+    url: '/error',
+    github: 'https://github.com/jayrboy/react-development-book1.git',
+    title: '101 react',
+    text: 'พื้นฐาน React พัฒนา Web App ด้วย JavaScript และ JSX',
   },
 ]
