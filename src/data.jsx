@@ -18,6 +18,7 @@ import blogApp from './assets/projects/blog-app.png'
 import shopContext from './assets/projects/shopping-context.png'
 import quizApp from './assets/projects/quiz-app.png'
 import reactVite from './assets/projects/react-vite.png'
+import viteApi from './assets/projects/vite-api.png'
 import shopRedux from './assets/projects/shopping-redux.png'
 import reactRedux101 from './assets/projects/react-redux-101.png'
 import react101 from './assets/projects/react-101.png'
@@ -150,6 +151,14 @@ export const projects = [
     github: 'https://github.com/jayrboy/app-react-vite.git',
     title: '101 react+vite project',
     text: 'React Vite Application',
+  },
+  {
+    id: nanoid(),
+    img: viteApi,
+    url: 'https://vite-search-images.netlify.app',
+    github: 'https://github.com/jayrboy/search-image-app-vite.git',
+    title: 'Vite API Images',
+    text: 'ค้นหาข้อมูลรูปภาพด้วย API',
   },
   {
     id: nanoid(),
