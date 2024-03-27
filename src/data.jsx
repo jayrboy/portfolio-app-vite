@@ -22,6 +22,7 @@ import viteApi from './assets/projects/vite-api.png'
 import shopRedux from './assets/projects/shopping-redux.png'
 import reactRedux101 from './assets/projects/react-redux-101.png'
 import react101 from './assets/projects/react-101.png'
+import qrcode from './assets/projects/qrcode.png'
 
 export const headers = [
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -183,5 +184,13 @@ export const projects = [
     github: 'https://github.com/jayrboy/react-frontend.git',
     title: '101 react',
     text: 'พื้นฐาน React พัฒนา Web App ด้วย JavaScript และ JSX',
+  },
+  {
+    id: nanoid(),
+    img: qrcode,
+    url: 'https://qrcode-vite.netlify.app/',
+    github: 'https://github.com/jayrboy/QRCode-vite-react',
+    title: 'QR Code Generator',
+    text: 'สร้าง QRCode จาก link: URL',
   },
 ]
