@@ -9,7 +9,7 @@ const Contact = () => {
     ev.preventDefault()
 
     emailjs
-      .sendForm('service_7nx0av8', 'template_txy155n', form.current, {
+      .sendForm('service_5d5auhc', 'template_0shyvym', form.current, {
         publicKey: import.meta.env.VITE_EMAILJS_KEY,
       })
       .then(() => {

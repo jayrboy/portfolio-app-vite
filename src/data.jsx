@@ -172,7 +172,7 @@ export const projects = [
   {
     id: nanoid(),
     img: reactRedux101,
-    url: 'https://react-dev-101.netlify.app',
+    url: 'https://react-app-101.netlify.app',
     github: 'https://github.com/jayrboy/react-development-book1.git',
     title: '101 react redux context',
     text: 'พื้นฐานการใช้งาน React และตัวอย่างการสร้างแอปพลิเคชันด้วย react + redux API + context',
