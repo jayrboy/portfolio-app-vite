@@ -60,7 +60,7 @@ const Hero = () => {
     <section className="bg-zinc-800 py-24">
       <div className=" mx-auto max-w-7xl  px-8  grid  md:grid-cols-2 items-center gap-8">
         <article>
-          <h1 className="text-7xl font-bold tracking-wider bouncing-text-y">
+          <p className="text-7xl font-bold tracking-wider bouncing-text-y">
             <a href="https://weliveapp.netlify.app/" target="_blank">
               <img
                 src={project}
@@ -69,7 +69,7 @@ const Hero = () => {
                 style={{ border: '1px solid #555', borderRadius: '20%' }}
               />
             </a>
-          </h1>
+          </p>
           <h2 className="text-6xl font-bold tracking-wider text-white">
             I am Jakkrit
           </h2>

@@ -35,10 +35,11 @@ import mongo from './assets/skills/mongo.svg'
 import mysql from './assets/skills/mysql.svg'
 
 export const headers = [
-  { id: nanoid(), href: '#skills', text: 'skills' },
-  { id: nanoid(), href: '#about', text: 'about' },
-  { id: nanoid(), href: '#projects', text: 'projects' },
-  { id: nanoid(), href: '#contact', text: 'contact' },
+  { id: nanoid(), href: '#skills', name: 'Skills', current: true },
+  { id: nanoid(), href: '#about', name: 'About', current: true },
+  { id: nanoid(), href: '#projects', name: 'Projects', current: true },
+  { id: nanoid(), href: '#contact', name: 'Contact', current: true },
+  { id: nanoid(), href: '/resume', name: 'Resume', current: true },
 ]
 
 export const skills = [

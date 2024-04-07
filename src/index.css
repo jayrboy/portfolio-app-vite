@@ -12,6 +12,7 @@ nav {
   width: 100%;
   height: 80px;
   position: fixed;
+  z-index: 10; /* กำหนดค่า z-index ให้สูงกว่าเพื่อให้แสดงอยู่ด้านหน้า */
 }
 
 .menu {
@@ -35,6 +36,28 @@ nav {
   padding: 2px 5px;
   border-radius: 5px;
 }
+
+.menu-mobile {
+  /* สำหรับสถานะ inactive */
+  color: white;
+  border-radius: 5px;
+}
+
+.menu-mobile:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+  color: #ff6347;
+}
+
+.active_menu-mobile {
+  /* สำหรับสถานะ active */
+  color: white;
+  background-color: #ff6347;
+
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
 @keyframes bounceX {
   0% {
     transform: translateY(-5px);
@@ -65,6 +88,8 @@ nav {
 
 .bouncing-text-y {
   animation: bounceY 1s infinite;
+  position: relative; /* ให้มีการใช้ position เพื่อให้สามารถกำหนด z-index ได้ */
+  z-index: 0; /* ให้มีค่า z-index สูงกว่าเนื้อหาหลักของเว็บ */
 }
 
 .modal {
