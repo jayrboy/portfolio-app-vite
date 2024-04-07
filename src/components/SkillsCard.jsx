@@ -6,7 +6,7 @@ const SkillsCard = ({ icon, title, text, img }) => {
         <img src={img} alt={img} className="h-16 w-16" />
       </div>
       <h4 className="mt-6 font-bold">{title}</h4>
-      <p className="mt-2 text-slate-500">{text}</p>
+      <p className="mt-2 text-slate-500 text-justify">{text}</p>
     </article>
   )
 }
