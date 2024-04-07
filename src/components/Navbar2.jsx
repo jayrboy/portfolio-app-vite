@@ -12,7 +12,7 @@ export default function Navbar2() {
     <Disclosure as="nav" className="bg-zinc-800">
       {({ open }) => (
         <>
-          <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="align-element max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button*/}
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden mt-3">
