@@ -4,6 +4,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 import TrackVisibility from 'react-on-screen'
 import { CgHello } from 'react-icons/cg'
 import project from '../assets/myapp.png'
+import resumePDF from '../assets/Resume.pdf'
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -18,6 +19,26 @@ const Hero = () => {
     'React Developer',
   ]
   const period = 1000
+
+  const [timer, setTimer] = useState(5)
+  const [downloadClicked, setDownloadClicked] = useState(false)
+
+  useEffect(() => {
+    if (downloadClicked) {
+      const initCount = setInterval(() => {
+        if (timer > 0) {
+          setTimer((prevTimer) => prevTimer - 1)
+        } else {
+          clearInterval(initCount) // หยุดการนับถอยหลังเมื่อ timer เป็น 0
+          window.location.href = resumePDF // ส่งผู้ใช้ไปยังลิงก์ไฟล์ที่กำหนด
+        }
+      }, 1000)
+
+      // คืนค่าฟังก์ชันเพื่อให้ useEffect เรียกฟังก์ชันนี้เมื่อ component ถูก unmount
+      return () => clearInterval(initCount)
+    }
+    setDownloadClicked(false)
+  }, [timer, downloadClicked]) // ให้ useEffect ทำงานเมื่อ component ถูก mount และไม่ต้องการ dependency ใดๆ
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -96,6 +117,27 @@ const Hero = () => {
               <FaGithubSquare className="h-8 w-8 text-white hover:text-slate-500" />
             </a>
           </div>
+          {/* ใช้ JSX เพื่อแสดงผล timer */}
+          {downloadClicked ? (
+            <>
+              {timer === 0 ? (
+                <p className="mt-3 text-slate-500 text-justify">
+                  Your file is downloading...
+                </p>
+              ) : (
+                <p className="mt-3 text-slate-500 text-justify">
+                  Your download will begin in <b>{timer}</b> seconds
+                </p>
+              )}
+            </>
+          ) : (
+            <button
+              onClick={() => setDownloadClicked(true)}
+              className="bg-orange-500 hover:bg-orange-600 text-white e py-1 px-3 rounded mt-3"
+            >
+              Resume.pdf
+            </button>
+          )}
         </article>
 
         <article className="hidden md:block ">
