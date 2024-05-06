@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 import {
   FaGithub,
   FaHtml5,
@@ -6,33 +6,36 @@ import {
   FaReact,
   FaBootstrap,
   FaNode,
-} from 'react-icons/fa'
-import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi'
-import { GrMysql } from 'react-icons/gr'
+} from 'react-icons/fa';
+import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
+import { GrMysql } from 'react-icons/gr';
 
-import books from './assets/projects/books.png'
-import backroads from './assets/projects/backroads.png'
-import reactBasic from './assets/projects/react-basic.png'
-import taskManage from './assets/projects/task-manage.png'
-import blogApp from './assets/projects/blog-app.png'
-import shopContext from './assets/projects/shopping-context.png'
-import quizApp from './assets/projects/quiz-app.png'
-import reactVite from './assets/projects/react-vite.png'
-import viteApi from './assets/projects/vite-api.png'
-import shopRedux from './assets/projects/shopping-redux.png'
-import reactRedux101 from './assets/projects/react-redux-101.png'
-import react101 from './assets/projects/react-101.png'
-import qrcode from './assets/projects/qrcode.png'
+import books from './assets/projects/books.png';
+import backroads from './assets/projects/backroads.png';
+import reactBasic from './assets/projects/react-basic.png';
+import taskManage from './assets/projects/task-manage.png';
+import blogApp from './assets/projects/blog-app.png';
+import shopContext from './assets/projects/shopping-context.png';
+import quizApp from './assets/projects/quiz-app.png';
+import reactVite from './assets/projects/react-vite.png';
+import viteApi from './assets/projects/vite-api.png';
+import shopRedux from './assets/projects/shopping-redux.png';
+import reactRedux101 from './assets/projects/react-redux-101.png';
+import react101 from './assets/projects/react-101.png';
+import qrcode from './assets/projects/qrcode.png';
 
-import github from './assets/skills/github.svg'
-import html5 from './assets/skills/html5.svg'
-import javascript from './assets/skills/javascript.svg'
-import react from './assets/skills/react.svg'
-import bootstrap from './assets/skills/bootstrap.svg'
-import tailwind from './assets/skills/tailwind.svg'
-import nodejs from './assets/skills/node-js.svg'
-import mongo from './assets/skills/mongo.svg'
-import mysql from './assets/skills/mysql.svg'
+import github from './assets/skills/github.svg';
+import html5 from './assets/skills/html5.svg';
+import javascript from './assets/skills/javascript.svg';
+import react from './assets/skills/react.svg';
+import bootstrap from './assets/skills/bootstrap.svg';
+import tailwind from './assets/skills/tailwind.svg';
+import nodejs from './assets/skills/node-js.svg';
+import mongo from './assets/skills/mongo.svg';
+import mysql from './assets/skills/mysql.svg';
+import angular from './assets/skills/angular.png';
+import dotnetCore from './assets/skills/dotnet_core.png';
+import sqlServer from './assets/skills/sql-server.svg';
 
 export const headers = [
   { id: nanoid(), href: '#skills', name: 'Skills', current: true },
@@ -40,7 +43,7 @@ export const headers = [
   { id: nanoid(), href: '#projects', name: 'Projects', current: true },
   { id: nanoid(), href: '#contact', name: 'Contact', current: true },
   { id: nanoid(), href: '/resume', name: 'Resume', current: true },
-]
+];
 
 export const skills = [
   {
@@ -69,7 +72,13 @@ export const skills = [
     title: 'React',
     img: react,
     icon: <FaReact className="h-16 w-16 text-orange-500 mx-auto" />,
-    text: 'ไลบรารีของภาษา JavaScript ใช้เพื่อสร้างแอปพลิเคชันฝั่งไคลเอนต์ เพื่อสร้างส่วนติดต่อกับผู้ใช้ในแบบไดนามิก JSX เมื่ออัปเดตบางส่วนของแอปโดยที่แอปจะไม่ทำการโหลดหน้าเว็บขึ้นมาใหม่ทั้งหมด ในขั้นตอนการพัฒนาเว็บแอปจะสะดวกและรวดเร็วยิ่งขึ้น',
+    text: 'ไลบรารีของภาษา JavaScript ใช้เพื่อสร้างเว็บแอปพลิเคชันฝั่งไคลเอนต์ เพื่อสร้างส่วนติดต่อกับผู้ใช้ในแบบไดนามิก JSX เมื่ออัปเดตบางส่วนของแอปโดยที่แอปจะไม่ทำการโหลดหน้าเว็บขึ้นมาใหม่ทั้งหมด ในขั้นตอนการพัฒนาเว็บแอปจะสะดวกและรวดเร็วยิ่งขึ้น',
+  },
+  {
+    id: nanoid(),
+    title: 'Angular',
+    img: angular,
+    text: 'เฟรมเวิร์กของภาษา JavaScript ใช้เพื่อสร้างเว็บแอปพลิเคชันฝั่งไคลเอนต์ ที่ออกแบบมาเน้นการจัดการระบบเว็บไซต์ขนาดใหญ่ได้อย่างมีประสิทธิภาพ มีเครื่องที่อำนวยความสะดวกให้กับนักพัฒนา ทำให้นิยมใช้กันอย่างมาก',
   },
   {
     id: nanoid(),
@@ -94,6 +103,12 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: 'ASP.NET Core',
+    img: dotnetCore,
+    text: 'พัฒนาเว็บแอปพลิเคชันฝั่งเซิร์ฟเวอร์ ที่มีหลักการแบง่การทำงานออกเป็น 3 ส่วน คือ Model, View, Controller เป็น Framework ที่มีความยืดหยุ่น รองรับการใช้งานบนหลายแพลตฟอร์ม เป็นเครื่องมือที่สำคัญในการสร้างแอปพลิเคชันที่ทันสมัยและมีประสิทธิภาพสูง สามารถรองรับการพัฒนาแอปพลิเคชันที่หลากหลาย',
+  },
+  {
+    id: nanoid(),
     title: 'MongoDB',
     img: mongo,
     icon: <BiLogoMongodb className="h-16 w-16 text-orange-500 mx-auto" />,
@@ -106,7 +121,13 @@ export const skills = [
     icon: <GrMysql className="h-16 w-16 text-orange-500 mx-auto" />,
     text: 'ฐานข้อมูล DBMS ที่มีลักษณะโครงสร้างแบบ SQL จัดเก็บข้อมูลในรูปแบบ Relational เก็บไว้ในไฟล์ฐานข้อมูล มีชื่อ Database ภายในมี Table, Record และ Row ในขั้นตอนพัฒนา Query ข้อมูลด้วยภาษาที่อ่านเข้าใจได้ง่าย ฟรีสำหรับเวอร์ชัน Community',
   },
-]
+  {
+    id: nanoid(),
+    title: 'SQL Server',
+    img: sqlServer,
+    text: 'SQL Server ระบบจัดการฐานข้อมูลที่ถือว่ามีความนิยมและแพร่หลายอย่างกว้างขวางในโลกธุรกิจและองค์กร โดยเป็นส่วนหนึ่งของระบบฐานข้อมูลที่ใช้เทคโนโลยี SQL (Structured Query Language) เพื่อการจัดการข้อมูลในรูปแบบที่มีโครงสร้างและข้อมูลที่มีความสัมพันธ์ได้อย่างมีประสิทธิภาพ',
+  },
+];
 
 export const projects = [
   {
@@ -213,4 +234,4 @@ export const projects = [
     title: 'QR Code Generator',
     text: 'สร้าง QRCode จาก link: URL',
   },
-]
+];
