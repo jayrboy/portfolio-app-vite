@@ -1,81 +1,86 @@
-import { useEffect, useState } from 'react'
-import heroImg from '../assets/hero.png'
-import { FaGithubSquare } from 'react-icons/fa'
-import TrackVisibility from 'react-on-screen'
-import { CgHello } from 'react-icons/cg'
-import project from '../assets/myapp.png'
-import resumePDF from '../assets/Resume.pdf'
+import { useEffect, useState } from 'react';
+import heroImg from '../assets/hero.png';
+import { FaGithubSquare } from 'react-icons/fa';
+import TrackVisibility from 'react-on-screen';
+import { CgHello } from 'react-icons/cg';
+import project from '../assets/myapp.png';
+// import resumePDF from '../assets/Resume.pdf';
+import resumePDF from '../assets/error_pdf.png';
+
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const Hero = () => {
-  const [loopNum, setLoopNum] = useState(0)
-  const [isDeleting, setIsDeleting] = useState(false)
-  const [text, setText] = useState('')
-  const [delta, setDelta] = useState(50)
-  const [index, setIndex] = useState(1)
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(50);
+  const [index, setIndex] = useState(1);
   const toRotate = [
     'Programmer',
     'Web Developer',
-    'Frontend Developer',
-    'React Developer',
-  ]
-  const period = 1000
+    'React.JS Developer',
+    'Node.JS Developer',
+    'Angular.TS Developer',
+    'C# .NET Core Developer',
+  ];
+  const period = 1000;
 
-  const [timer, setTimer] = useState(5)
-  const [downloadClicked, setDownloadClicked] = useState(false)
+  const [timer, setTimer] = useState(5);
+  const [downloadClicked, setDownloadClicked] = useState(false);
 
   useEffect(() => {
     if (downloadClicked) {
       const initCount = setInterval(() => {
         if (timer > 0) {
-          setTimer((prevTimer) => prevTimer - 1)
+          setTimer((prevTimer) => prevTimer - 1);
         } else {
-          clearInterval(initCount) // หยุดการนับถอยหลังเมื่อ timer เป็น 0
-          window.location.href = resumePDF // ส่งผู้ใช้ไปยังลิงก์ไฟล์ที่กำหนด
+          clearInterval(initCount); // หยุดการนับถอยหลังเมื่อ timer เป็น 0
+          window.location.href = resumePDF; // ส่งผู้ใช้ไปยังลิงก์ไฟล์ที่กำหนด
         }
-      }, 1000)
+      }, 1000);
 
       // คืนค่าฟังก์ชันเพื่อให้ useEffect เรียกฟังก์ชันนี้เมื่อ component ถูก unmount
-      return () => clearInterval(initCount)
+      return () => clearInterval(initCount);
     }
-    setDownloadClicked(false)
-  }, [timer, downloadClicked]) // ให้ useEffect ทำงานเมื่อ component ถูก mount และไม่ต้องการ dependency ใดๆ
+    setDownloadClicked(false);
+  }, [timer, downloadClicked]); // ให้ useEffect ทำงานเมื่อ component ถูก mount และไม่ต้องการ dependency ใดๆ
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      tick()
-    }, delta)
+      tick();
+    }, delta);
 
     return () => {
-      clearInterval(ticker)
-    }
-  }, [text])
+      clearInterval(ticker);
+    };
+  }, [text]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length
-    let fullText = toRotate[i]
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1)
+      : fullText.substring(0, text.length + 1);
 
-    setText(updatedText)
+    setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2)
+      setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true)
-      setIndex((prevIndex) => prevIndex - 1)
-      setDelta(period)
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
     } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false)
-      setLoopNum(loopNum + 1)
-      setIndex(1)
-      setDelta(100)
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(100);
     } else {
-      setIndex((prevIndex) => prevIndex + 1)
+      setIndex((prevIndex) => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="bg-zinc-800 py-24">
@@ -133,9 +138,12 @@ const Hero = () => {
           ) : (
             <button
               onClick={() => setDownloadClicked(true)}
-              className="bg-orange-500 hover:bg-orange-600 text-white e py-1 px-3 rounded mt-3"
+              className="flex bg-orange-500 hover:bg-orange-600 text-white py-1 px-3 rounded mt-3 items-center justify-center"
             >
-              Resume.pdf
+              Download Resume
+              <div className="ml-2">
+                <FaCloudDownloadAlt />
+              </div>
             </button>
           )}
         </article>
@@ -149,6 +157,6 @@ const Hero = () => {
         </article>
       </div>
     </section>
-  )
-}
-export default Hero
+  );
+};
+export default Hero;

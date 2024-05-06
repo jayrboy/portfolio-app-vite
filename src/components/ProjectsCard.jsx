@@ -1,5 +1,5 @@
-import { FaGithubSquare } from 'react-icons/fa'
-import { TbWorldWww } from 'react-icons/tb'
+import { FaGithubSquare } from 'react-icons/fa';
+import { TbWorldWww } from 'react-icons/tb';
 
 const ProjectsCard = ({ url, img, github, title, text }) => {
   return (
@@ -22,6 +22,6 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
         </div>
       </div>
     </article>
-  )
-}
-export default ProjectsCard
+  );
+};
+export default ProjectsCard;

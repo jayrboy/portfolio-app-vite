@@ -37,12 +37,17 @@ import angular from './assets/skills/angular.png';
 import dotnetCore from './assets/skills/dotnet_core.png';
 import sqlServer from './assets/skills/sql-server.svg';
 
+import firstAngular from './assets/projectNg/first_angular.png';
+import inventoryProject from './assets/projectNg/inventory_project.png';
+import firstCore from './assets/projectsCore/first_core.png';
+import inventoryProjectCore from './assets/projectsCore/inventory_projectCore.png';
+
 export const headers = [
   { id: nanoid(), href: '#skills', name: 'Skills', current: true },
   { id: nanoid(), href: '#about', name: 'About', current: true },
   { id: nanoid(), href: '#projects', name: 'Projects', current: true },
   { id: nanoid(), href: '#contact', name: 'Contact', current: true },
-  { id: nanoid(), href: '/resume', name: 'Resume', current: true },
+  // { id: nanoid(), href: '/resume', name: 'Resume', current: true },
 ];
 
 export const skills = [
@@ -105,7 +110,7 @@ export const skills = [
     id: nanoid(),
     title: 'ASP.NET Core',
     img: dotnetCore,
-    text: 'พัฒนาเว็บแอปพลิเคชันฝั่งเซิร์ฟเวอร์ ที่มีหลักการแบง่การทำงานออกเป็น 3 ส่วน คือ Model, View, Controller เป็น Framework ที่มีความยืดหยุ่น รองรับการใช้งานบนหลายแพลตฟอร์ม เป็นเครื่องมือที่สำคัญในการสร้างแอปพลิเคชันที่ทันสมัยและมีประสิทธิภาพสูง สามารถรองรับการพัฒนาแอปพลิเคชันที่หลากหลาย',
+    text: 'เป็น เฟรมเวิร์ก ที่ใช้พัฒนาเว็บแอปพลิเคชัน ที่มีหลักการแบง่การทำงานออกเป็น 3 ส่วน คือ Model, View, Controller เป็น Framework ที่มีความยืดหยุ่น รองรับการใช้งานบนหลายแพลตฟอร์ม เป็นเครื่องมือที่สำคัญในการสร้างแอปพลิเคชันที่ทันสมัยและมีประสิทธิภาพสูง สามารถรองรับการพัฒนาแอปพลิเคชันที่หลากหลาย',
   },
   {
     id: nanoid(),
@@ -233,5 +238,43 @@ export const projects = [
     github: 'https://github.com/jayrboy/QRCode-vite-react',
     title: 'QR Code Generator',
     text: 'สร้าง QRCode จาก link: URL',
+  },
+];
+
+export const projectsNg = [
+  {
+    id: nanoid(),
+    img: firstAngular,
+    url: '/error',
+    github: 'https://github.com/jayrboy/first-angular.git',
+    title: 'Angular 101',
+    text: 'ระบบโชว์หนังสือ สร้าง, แก้ไข, ลบ, upload file, routing, path/:id, render data (CommonModule), input (ngModel) แล้วแต่งหน้าเว็บไซต์ด้วย Bootstrap',
+  },
+  {
+    id: nanoid(),
+    img: inventoryProject,
+    url: '/error',
+    github: 'https://github.com/jayrboy/ngInventory.git',
+    title: 'ระบบ Inventory (เชื่อมต่อ API กับ ASP.NET Core)',
+    text: 'CRUD นอกจากเพิ่มสต๊อกสินค้า แล้วมีระบบจัดการ เพิ่มจำนวนสต๊อก, ขาย, หมดอายุ ลดจำนวน, ค้นหาข้อมูล, เรียงข้อมูล, แบ่งเพจ, และสามารถดูประวัติการอัปเดตข้อมูลในตาราง PK, FD จาก SQL Server ที่เชื่อมความสัมพันธ์ข้อมูลไว้ใน SSMS แล้วแต่งหน้าเว็บไซต์ด้วย Tailwind CSS',
+  },
+];
+
+export const projectsCore = [
+  {
+    id: nanoid(),
+    img: firstCore,
+    url: '/error',
+    github: 'https://github.com/jayrboy/dotnet-webapi.git',
+    title: 'ASP.NET Core 101',
+    text: 'สร้าง Web API โดยใช้ Generate API Spec with Swagger หลักการเขียนเว็บแอปพลิเคชันฝั่งเซิร์ฟเวอร์ รูปแบบ Model, View, Controller และ Metadata ทดสอบเขียน REST API (CRUD), Soft Delete, Set Route Path, Validation, Sorting, Searching, Paging, One-to-many Relation API (SQL Server/ SSMS), Upload file API, Export Word-Excel-PDF API, JWT Login, Port Setting',
+  },
+  {
+    id: nanoid(),
+    img: inventoryProjectCore,
+    url: '/error',
+    github: 'https://github.com/jayrboy/dotnet-inventory-stock.git',
+    title: 'ระบบ Inventory (เชื่อมต่อ API กับ Angular 17)',
+    text: 'CRUD นอกจากเพิ่มสต๊อกสินค้า แล้วมีระบบจัดการ เพิ่มจำนวนสต๊อก, ขาย, หมดอายุ ลดจำนวน, ค้นหาข้อมูล, เรียงข้อมูล, แบ่งเพจ, และสามารถดูประวัติการอัปเดตข้อมูลในตาราง PK, FD จาก SQL Server ที่เชื่อมความสัมพันธ์ข้อมูลไว้ใน SSMS',
   },
 ];
