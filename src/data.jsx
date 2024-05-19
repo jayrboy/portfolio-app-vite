@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoMongodb } from 'react-icons/bi';
 import { GrMysql } from 'react-icons/gr';
+import { SiTypescript } from 'react-icons/si';
 
 import books from './assets/projects/books.png';
 import backroads from './assets/projects/backroads.png';
@@ -27,6 +28,7 @@ import qrcode from './assets/projects/qrcode.png';
 import github from './assets/skills/github.svg';
 import html5 from './assets/skills/html5.svg';
 import javascript from './assets/skills/javascript.svg';
+import typescript from './assets/skills/typescript.svg';
 import react from './assets/skills/react.svg';
 import bootstrap from './assets/skills/bootstrap.svg';
 import tailwind from './assets/skills/tailwind.svg';
@@ -39,6 +41,8 @@ import sqlServer from './assets/skills/sql-server.svg';
 
 import firstAngular from './assets/projectNg/first_angular.png';
 import inventoryProject from './assets/projectNg/inventory_project.png';
+import firstAngularTravelApp from './assets/projectNg/first_angular_travel_app.png';
+
 import firstCore from './assets/projectsCore/first_core.png';
 import inventoryProjectCore from './assets/projectsCore/inventory_projectCore.png';
 
@@ -71,6 +75,13 @@ export const skills = [
     img: javascript,
     icon: <FaJs className="h-16 w-16 text-orange-500 mx-auto" />,
     text: 'การสร้างเว็บเพจให้ทำงานแบบไดนามิกได้ผลลัพธ์ตามเงื่อนไขหรือข้อกำหนดต่างๆ จะอยู่ในรูปแบบโมดูลฟังก์ชัน และนำองค์ประกอบที่เรียกว่าไลบรารีที่มีอยู่ใน JavaScript มาช่วยในการพัฒนาแอปพลิเคชันบนเว็บบราวเซอร์',
+  },
+  {
+    id: nanoid(),
+    title: 'TypeScript',
+    img: typescript,
+    icon: <SiTypescript className="h-16 w-16 text-orange-500 mx-auto" />,
+    text: 'คือ JavaScript ที่ถูกนำมาปรับปรุงให้ดีขึ้น โดยสามารถดักจับข้อผิดพลาด Error โดยไม่จำเป็นต้อง Run Code ก่อน เนื่องจาก JS สามารถประกาศตัวแปรแบบไม่ต้องกำหนด Type เช่น int, float, char ที่ทำให้มีโอกาสเกิดข้อผิดพลาดในการรับส่งค่าระหว่้างตัวแปรได้ โดย TS จะเข้ามาช่วยควบคุมไม่ให้มีการใช้งานตัวแปรผิด Type',
   },
   {
     id: nanoid(),
@@ -257,6 +268,14 @@ export const projectsNg = [
     github: 'https://github.com/jayrboy/ngInventory.git',
     title: 'ระบบ Inventory (เชื่อมต่อ API กับ ASP.NET Core)',
     text: 'CRUD นอกจากเพิ่มสต๊อกสินค้า แล้วมีระบบจัดการ เพิ่มจำนวนสต๊อก, ขาย, หมดอายุ ลดจำนวน, ค้นหาข้อมูล, เรียงข้อมูล, แบ่งเพจ, และสามารถดูประวัติการอัปเดตข้อมูลในตาราง PK, FD จาก SQL Server ที่เชื่อมความสัมพันธ์ข้อมูลไว้ใน SSMS แล้วแต่งหน้าเว็บไซต์ด้วย Tailwind CSS',
+  },
+  {
+    id: nanoid(),
+    img: firstAngularTravelApp,
+    url: 'https://angular-travel-101.netlify.app',
+    github: 'https://github.com/jayrboy/first-angular.git',
+    title: '101 Travel Project',
+    text: 'Tailwind CSS กับ Angular Material, Material Icon - สร้าง Model (interface) - เรียกใช้ API จาก Services - กำหนด Router และ Detail Page - FormGroup - Searching - HTTP (fetch) - JSON file',
   },
 ];
 

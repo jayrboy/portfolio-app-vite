@@ -18,10 +18,10 @@ const Hero = () => {
   const toRotate = [
     'Programmer',
     'Web Developer',
-    'React.JS Developer',
+    'React Developer',
     'Node.JS Developer',
-    'Angular.TS Developer',
-    'C# .NET Core Developer',
+    'Angular Developer',
+    'C# ASP.NET Core Developer',
   ];
   const period = 1000;
 
