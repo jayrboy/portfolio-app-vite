@@ -42,9 +42,14 @@ import sqlServer from './assets/skills/sql-server.svg';
 import firstAngular from './assets/projectNg/first_angular.png';
 import inventoryProject from './assets/projectNg/inventory_project.png';
 import firstAngularTravelApp from './assets/projectNg/first_angular_travel_app.png';
+import activityProject from './assets/projectNg/ng_activity.png';
 
 import firstCore from './assets/projectsCore/first_core.png';
 import inventoryProjectCore from './assets/projectsCore/inventory_projectCore.png';
+import activityProjectCore from './assets/projectsCore/core_activity.png';
+import coreMongoDB from './assets/projectsCore/core_mongodb.png';
+import crudCore from './assets/projectsCore/CRUDCore.png';
+import webserverSocket from './assets/projectsCore/core_websocket.png';
 
 export const headers = [
   { id: nanoid(), href: '#skills', name: 'Skills', current: true },
@@ -277,6 +282,14 @@ export const projectsNg = [
     title: '101 Travel Project',
     text: 'Tailwind CSS กับ Angular Material, Material Icon - สร้าง Model (interface) - เรียกใช้ API จาก Services - กำหนด Router และ Detail Page - FormGroup - Searching - HTTP (fetch) - JSON file',
   },
+  {
+    id: nanoid(),
+    img: activityProject,
+    url: '/error',
+    github: 'https://github.com/jayrboy/ngActivity.git',
+    title: 'Activity Project',
+    text: 'ระบบ Login ใช้ Auth Guard (CanActivateFn), เพิ่มโครงการหลัก วันเริ่ม วันที่สิ้นสิ้น, เพิ่มไฟล์ 100 MB ได้ไม่เกิน 5 ไฟล์, และสามารถเพิ่มกิจกรรมลูกได้เรื่อยๆ เพื่อเพิ่มข้อความ',
+  },
 ];
 
 export const projectsCore = [
@@ -295,5 +308,37 @@ export const projectsCore = [
     github: 'https://github.com/jayrboy/dotnet-inventory-stock.git',
     title: 'ระบบ Inventory (เชื่อมต่อ API กับ Angular 17)',
     text: 'CRUD นอกจากเพิ่มสต๊อกสินค้า แล้วมีระบบจัดการ เพิ่มจำนวนสต๊อก, ขาย, หมดอายุ ลดจำนวน, ค้นหาข้อมูล, เรียงข้อมูล, แบ่งเพจ, และสามารถดูประวัติการอัปเดตข้อมูลในตาราง PK, FD จาก SQL Server ที่เชื่อมความสัมพันธ์ข้อมูลไว้ใน SSMS',
+  },
+  {
+    id: nanoid(),
+    img: activityProjectCore,
+    url: '/error',
+    github: 'https://github.com/jayrboy/dotnet-activity.git',
+    title: 'ระบบ Activity (เชื่อมต่อ API กับ Angular 17)',
+    text: 'Web API เขียนแบบ Base Controllers (MVC), มีการการพิสูจน์ตัวตน (Authentication) และการอนุญาต (Authorization) ด้วย Barer Token (Jwt) ในการใช้งาน API, และจัดการข้อมูลโครงการ ไฟล์ และข้อมูลกิจกรรมเข้าฐานข้อมูล SQL Server โดยใช้หลักการ Database First',
+  },
+  {
+    id: nanoid(),
+    img: coreMongoDB,
+    url: '/error',
+    github: 'https://github.com/jayrboy/dotnet-WebApiMongoDb.git',
+    title: 'ASP. NET Core connect MongoDB 101',
+    text: 'Web API เชื่อมต่อกับฐานข้อมูล NoSQL ด้วย MongoDB - CRUD พื้นฐาน',
+  },
+  {
+    id: nanoid(),
+    img: crudCore,
+    url: '/error',
+    github: 'https://github.com/jayrboy/dotnet-WebApiMongoDb.git',
+    title: 'ASP. NET Core MVC 101',
+    text: 'พื้นฐานการใช้งาน ASP.NET Core MVC ด้วยภาษา C# - ใช้ฐานข้อมูลจำลอง Northwind ใช้ Entity Framework แปลงฐานข้อมูลให้อยู่ในรูปแบบคลาส Model, แสดงข้อมูล 2 ตาราง, แสดงข้อมูลรายการเดียว, สร้าง, แก้ไข, ลบ',
+  },
+  {
+    id: nanoid(),
+    img: webserverSocket,
+    url: '/error',
+    github: 'https://github.com/jayrboy/WebServerSocket.git',
+    title: 'WebServerSocket / Angular 18',
+    text: 'เขียนโปรแกรมฝั่งไคเอนต์และเซิร์ฟเวอร์เพื่อใข้สำหรับ รับ และส่งข้อความระหว่างกันผ่าน TCP ทำการ Broadcast ให้กับ Web client ที่แสดงผลด้วย Angular',
   },
 ];

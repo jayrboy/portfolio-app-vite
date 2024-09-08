@@ -19,7 +19,7 @@ const Projects = () => {
         })}
       </div>
       {/* ASP.NET Core Projects */}
-      <SectionTitle text="ASP.NET Core 8 (Backend)" />
+      <SectionTitle text="C# ASP.NET Core 8" />
       <div className="py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {projectsCore.map((project) => {
           return <ProjectsCard key={project.id} {...project} />;

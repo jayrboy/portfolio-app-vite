@@ -4,8 +4,8 @@ import { FaGithubSquare } from 'react-icons/fa';
 import TrackVisibility from 'react-on-screen';
 import { CgHello } from 'react-icons/cg';
 import project from '../assets/myapp.png';
-// import resumePDF from '../assets/Resume.pdf';
-import resumePDF from '../assets/error_pdf.png';
+import resumePDF from '../assets/Resume.pdf';
+// import resumePDF from '../assets/error_pdf.png';
 
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 
