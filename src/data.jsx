@@ -292,6 +292,76 @@ export const projectsNg = [
   },
 ];
 
+export const projectsNext = [
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Next.js 101',
+    text: '',
+  },
+];
+
+export const projectsNode = [
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Node.js 101',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Serverless Function',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Deploy Azure (VM & App Services)',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Deploy AWS (Docker & Nginx)',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Deploy Netlify (monolith)',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Deploy Vercel (monolith)',
+    text: '',
+  },
+  {
+    id: nanoid(),
+    img: '',
+    url: '/error',
+    github: 'https://github.com/jayrboy',
+    title: 'Webhooks Messenger',
+    text: '',
+  },
+];
+
 export const projectsCore = [
   {
     id: nanoid(),
