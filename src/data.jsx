@@ -51,6 +51,8 @@ import coreMongoDB from './assets/projectsCore/core_mongodb.png';
 import crudCore from './assets/projectsCore/CRUDCore.png';
 import webserverSocket from './assets/projectsCore/core_websocket.png';
 
+import Next101 from './assets/projectsNext/nextjs-101.png';
+
 export const headers = [
   { id: nanoid(), href: '#skills', name: 'Skills', current: true },
   { id: nanoid(), href: '#about', name: 'About', current: true },
@@ -295,7 +297,7 @@ export const projectsNg = [
 export const projectsNext = [
   {
     id: nanoid(),
-    img: '',
+    img: Next101,
     url: '/error',
     github: 'https://github.com/jayrboy',
     title: 'Next.js 101',
